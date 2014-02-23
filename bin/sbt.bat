@@ -20,7 +20,7 @@ FOR /F "tokens=* eol=# usebackq delims=" %%i IN ("%FN%") DO (
   set DO_NOT_REUSE_ME=%%i
   rem ZOMG (Part #2) WE use !! here to delay the expansion of
   rem CFG_OPTS, otherwise it remains "" for this loop.
-  set CFG_OPTS=!CFG_OPTS! !DO_NOT_REUSE_ME!
+  set CFG_OPTS=!CFG_OPTS! "!DO_NOT_REUSE_ME!"
 )
 
 rem We use the value of the JAVACMD environment variable if defined

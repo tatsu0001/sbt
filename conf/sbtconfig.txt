@@ -12,3 +12,11 @@
 
 -Dsbt.log.format=true
 
+# sbt library files collect on !SBT_HOME!
+
+-Dsbt.global.base=!SBT_HOME!/../.sbt
+
+-Dsbt.boot.directory=!SBT_HOME!/../.sbt/boot
+
+-Dsbt.ivy.home=!SBT_HOME!/../.ivy2
+
