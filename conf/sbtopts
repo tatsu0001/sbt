@@ -14,14 +14,17 @@
 # Path to global settings/plugins directory (default: ~/.sbt)
 #
 #-sbt-dir  /etc/sbt
+-sbt-dir  ${sbt_home}/.sbt
 
 # Path to shared boot directory (default: ~/.sbt/boot in 0.11 series)
 #
 #-sbt-boot ~/.sbt/boot  
+-sbt-boot ${sbt_home}/.sbt/boot  
 
 # Path to local Ivy repository (default: ~/.ivy2)
 #
 #-ivy ~/.ivy2
+-ivy ${sbt_home}/.sbt/.ivy2
 
 # set memory options
 #
